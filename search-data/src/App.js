@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import personData from "./database";
-import Header from '../src/submodules-demo/Header';
+import Header from './submodules-demo/Header';
 class App extends Component {
   state = {
     searchKeyword: null,
@@ -143,7 +143,7 @@ class App extends Component {
             </tbody>
           </table>
         </div>
-        <Header/>
+        <Header name = "Manan"/>
       </div>
     );
   }
