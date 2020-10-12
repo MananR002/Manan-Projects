@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import personData from "./database";
+import Header from '../src/submodules-demo/Header';
 class App extends Component {
   state = {
     searchKeyword: null,
@@ -85,7 +86,9 @@ class App extends Component {
         return data;
     });
     return (
+      
       <div style={{ backgroundColor: "#107f8d" }}>
+        
         <h1 style={{ textAlign: "center", color: "lightblue" }}>
           Employee Data
         </h1>
@@ -140,6 +143,7 @@ class App extends Component {
             </tbody>
           </table>
         </div>
+        <Header/>
       </div>
     );
   }
