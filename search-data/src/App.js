@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import personData from "./database";
 import Header from './submodules-demo/Header';
+import Button from './submodules-demo/Button';
 class App extends Component {
   state = {
     searchKeyword: null,
@@ -144,6 +145,7 @@ class App extends Component {
           </table>
         </div>
         <Header name = "Manan"/>
+        <Button/>
       </div>
     );
   }
